@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:8031-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -278,7 +279,9 @@ Text GLabel 6500 3050 0    50   Input ~ 0
 GND
 Text GLabel 9250 3550 0    50   Input ~ 0
 GND
-Text GLabel 5200 1500 2    50   Input Italic 10
+Wire Wire Line
+	4850 1500 5200 1500
+Text GLabel 5200 1500 2    50   Input ~ 0
 VCC
 Wire Wire Line
 	4850 2400 5200 2400
@@ -364,111 +367,88 @@ Wire Wire Line
 $Comp
 L Device:CP_Small C3
 U 1 1 62D1A95E
-P 2600 2200
-F 0 "C3" H 2688 2246 50  0000 L CNN
-F 1 "10U" H 2688 2155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 2600 2200 50  0001 C CNN
-F 3 "~" H 2600 2200 50  0001 C CNN
-	1    2600 2200
+P 1450 2200
+F 0 "C3" H 1538 2246 50  0000 L CNN
+F 1 "10U" H 1538 2155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1450 2200 50  0001 C CNN
+F 3 "~" H 1450 2200 50  0001 C CNN
+	1    1450 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 62D1A9DE
-P 2600 2500
-F 0 "R1" H 2700 2550 50  0000 L CNN
-F 1 "10K" H 2659 2455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2600 2500 50  0001 C CNN
-F 3 "~" H 2600 2500 50  0001 C CNN
-	1    2600 2500
+P 1450 2500
+F 0 "R1" H 1550 2550 50  0000 L CNN
+F 1 "10K" H 1509 2455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1450 2500 50  0001 C CNN
+F 3 "~" H 1450 2500 50  0001 C CNN
+	1    1450 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 2300 2600 2300
+	3750 2300 1450 2300
 Wire Wire Line
-	2600 2400 2600 2300
-Connection ~ 2600 2300
+	1450 2400 1450 2300
+Connection ~ 1450 2300
 Wire Wire Line
-	2600 2100 2300 2100
+	1450 2100 1150 2100
 Wire Wire Line
-	2600 2600 2300 2600
-Text GLabel 2250 2100 0    50   Input ~ 0
+	1450 2600 1150 2600
+Text GLabel 1100 2100 0    50   Input ~ 0
 VCC
-Text GLabel 2250 2600 0    50   Input ~ 0
+Text GLabel 1100 2600 0    50   Input ~ 0
 GND
 $Comp
 L Device:CP_Small C4
 U 1 1 62D25DD0
-P 2300 2350
-F 0 "C4" H 2388 2396 50  0000 L CNN
-F 1 "100U" H 2388 2305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2300 2350 50  0001 C CNN
-F 3 "~" H 2300 2350 50  0001 C CNN
-	1    2300 2350
+P 1150 2350
+F 0 "C4" H 1238 2396 50  0000 L CNN
+F 1 "100U" H 1238 2305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1150 2350 50  0001 C CNN
+F 3 "~" H 1150 2350 50  0001 C CNN
+	1    1150 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 2250 2300 2100
-Connection ~ 2300 2100
+	1150 2250 1150 2100
+Connection ~ 1150 2100
 Wire Wire Line
-	2300 2100 2250 2100
+	1150 2100 1100 2100
 Wire Wire Line
-	2300 2450 2300 2600
-Connection ~ 2300 2600
+	1150 2450 1150 2600
+Connection ~ 1150 2600
 Wire Wire Line
-	2300 2600 2250 2600
+	1150 2600 1100 2600
 $Comp
 L Connector:Conn_01x08_Male J1
 U 1 1 62CD71C7
-P 3250 1800
-F 0 "J1" H 3100 1850 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 2850 1750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3250 1800 50  0001 C CNN
-F 3 "~" H 3250 1800 50  0001 C CNN
-	1    3250 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x08_Male J2
-U 1 1 62CD7254
-P 3250 2700
-F 0 "J2" H 3100 2700 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 2850 2600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3250 2700 50  0001 C CNN
-F 3 "~" H 3250 2700 50  0001 C CNN
-	1    3250 2700
+P 2650 1800
+F 0 "J1" H 2500 1850 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 2250 1750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2650 1800 50  0001 C CNN
+F 3 "~" H 2650 1800 50  0001 C CNN
+	1    2650 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 1500 3750 1500
+	2850 1500 3750 1500
 Wire Wire Line
-	3450 1600 3750 1600
+	2850 1600 3750 1600
 Wire Wire Line
-	3450 1700 3750 1700
+	2850 1700 3750 1700
 Wire Wire Line
-	3450 1800 3750 1800
+	2850 1800 3750 1800
 Wire Wire Line
-	3450 1900 3750 1900
+	2850 1900 3750 1900
 Wire Wire Line
-	3450 2000 3750 2000
+	2850 2000 3750 2000
 Wire Wire Line
-	3450 2100 3750 2100
+	2850 2100 3750 2100
 Wire Wire Line
-	3450 2200 3750 2200
-Wire Wire Line
-	3450 2400 3750 2400
-Wire Wire Line
-	3450 2500 3750 2500
-Wire Wire Line
-	3450 2600 3750 2600
-Wire Wire Line
-	3450 2700 3750 2700
-Wire Wire Line
-	3450 2800 3750 2800
+	2850 2200 3750 2200
 Wire Wire Line
 	3450 2900 3750 2900
-Wire Wire Line
-	3750 2900 3750 2850
 Wire Wire Line
 	3450 3000 3750 3000
 Wire Wire Line
@@ -477,4 +457,183 @@ NoConn ~ 4850 2700
 NoConn ~ 4850 2800
 NoConn ~ 9300 3050
 NoConn ~ 9300 3150
+$Comp
+L Timer:NE555 U4
+U 1 1 62D1710E
+P 4400 4700
+F 0 "U4" H 4400 5278 50  0000 C CNN
+F 1 "NE555" H 4400 5187 50  0000 C CNN
+F 2 "" H 4400 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4400 4700 50  0001 C CNN
+	1    4400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4300 4050 4300
+Wire Wire Line
+	3500 4900 3900 4900
+$Comp
+L Device:C_Small C5
+U 1 1 62D26D0F
+P 5150 5000
+F 0 "C5" H 5242 5046 50  0000 L CNN
+F 1 "103" H 5242 4955 50  0000 L CNN
+F 2 "" H 5150 5000 50  0001 C CNN
+F 3 "~" H 5150 5000 50  0001 C CNN
+	1    5150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 62D26DE3
+P 5650 4800
+F 0 "C6" H 5500 4900 50  0000 L CNN
+F 1 "104" H 5500 4700 50  0000 L CNN
+F 2 "" H 5650 4800 50  0001 C CNN
+F 3 "~" H 5650 4800 50  0001 C CNN
+	1    5650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C7
+U 1 1 62D26E83
+P 5450 4500
+F 0 "C7" V 5675 4500 50  0000 C CNN
+F 1 "100U" V 5584 4500 50  0000 C CNN
+F 2 "" H 5450 4500 50  0001 C CNN
+F 3 "~" H 5450 4500 50  0001 C CNN
+	1    5450 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 62D26F5B
+P 4750 4300
+F 0 "R2" V 4946 4300 50  0000 C CNN
+F 1 "R_Small" V 4855 4300 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "~" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 62D27011
+P 5150 4800
+F 0 "R3" H 5209 4846 50  0000 L CNN
+F 1 "R_Small" H 5209 4755 50  0000 L CNN
+F 2 "" H 5150 4800 50  0001 C CNN
+F 3 "~" H 5150 4800 50  0001 C CNN
+	1    5150 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 2900 0    50   Input ~ 0
+P3.5
+Text GLabel 3500 4900 0    50   Input ~ 0
+P3.5
+NoConn ~ 3750 2600
+NoConn ~ 3750 2700
+NoConn ~ 3750 2800
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 62D4FE38
+P 2650 2500
+F 0 "J2" H 2550 2600 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2300 2500 50  0000 C CNN
+F 2 "" H 2650 2500 50  0001 C CNN
+F 3 "~" H 2650 2500 50  0001 C CNN
+	1    2650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2400 3050 2400
+Wire Wire Line
+	2850 2700 3050 2700
+Wire Wire Line
+	2850 2600 3550 2600
+Wire Wire Line
+	3550 2600 3550 2500
+Wire Wire Line
+	3550 2500 3750 2500
+Wire Wire Line
+	2850 2500 3450 2500
+Wire Wire Line
+	3450 2500 3450 2400
+Wire Wire Line
+	3450 2400 3750 2400
+Text GLabel 3050 2400 2    50   Input ~ 0
+VCC
+Text GLabel 3050 2700 2    50   Input ~ 0
+GND
+$Comp
+L Device:Speaker LS1
+U 1 1 62DA44EC
+P 6050 4500
+F 0 "LS1" H 6220 4496 50  0000 L CNN
+F 1 "Speaker" H 6220 4405 50  0000 L CNN
+F 2 "" H 6050 4300 50  0001 C CNN
+F 3 "~" H 6040 4450 50  0001 C CNN
+	1    6050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4500 5350 4500
+Wire Wire Line
+	5550 4500 5650 4500
+Wire Wire Line
+	5650 4700 5650 4500
+Connection ~ 5650 4500
+Wire Wire Line
+	5650 4500 5850 4500
+NoConn ~ 3900 4700
+Wire Wire Line
+	4400 4300 4650 4300
+Connection ~ 4400 4300
+Wire Wire Line
+	4850 4300 5150 4300
+Wire Wire Line
+	5150 4300 5150 4700
+Wire Wire Line
+	4900 4700 5150 4700
+Connection ~ 5150 4700
+Wire Wire Line
+	4900 4900 5000 4900
+Connection ~ 5150 4900
+Wire Wire Line
+	3900 4500 3800 4500
+Wire Wire Line
+	3800 4500 3800 5100
+Wire Wire Line
+	4400 5100 4400 5250
+Wire Wire Line
+	4400 5250 5150 5250
+Wire Wire Line
+	5850 4600 5850 5250
+Wire Wire Line
+	5650 4900 5650 5250
+Connection ~ 5650 5250
+Wire Wire Line
+	5650 5250 5850 5250
+Wire Wire Line
+	5150 5100 5150 5250
+Connection ~ 5150 5250
+Wire Wire Line
+	5150 5250 5650 5250
+Wire Wire Line
+	5850 5250 6050 5250
+Connection ~ 5850 5250
+Text GLabel 6050 5250 2    50   Input ~ 0
+GND
+Text GLabel 4050 4300 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	3800 5100 4400 5100
+Wire Wire Line
+	5000 5100 5000 4900
+Connection ~ 4400 5100
+Wire Wire Line
+	4400 5100 5000 5100
+Connection ~ 5000 4900
+Wire Wire Line
+	5000 4900 5150 4900
 $EndSCHEMATC
